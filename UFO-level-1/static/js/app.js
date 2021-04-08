@@ -12,17 +12,20 @@ function addData (userObject) {
     userObject.forEach((report)=> {
         var newRow = tableBody.append('tr');
         newRow.append('td').text(report.datetime);
-        var city = report['city'].toUpperCase();
-        newRow.append('td').text(city);
+        var cities = report['city'].split(" ");
+        var city1 = cities.map((city)=> {
+            return city[0].toUpperCase() + city.substring(1);
+            }).join(" ");
+        newRow.append('td').text(city1);
         var state = report['state'].toUpperCase();
         newRow.append('td').text(state);
         var country = report['country'].toUpperCase();
         newRow.append('td').text(country);
-        var shape = report['shape'].toUpperCase();
-        newRow.append('td').text(shape);
-        var duration = report['durationMinutes'].toUpperCase();
-        newRow.append('td').text(duration);
-        newRow.append('td').text(report.comments);
+        var shape = report['shape'];
+        newRow.append('td').text(shape[0].toUpperCase() + shape.substring(1));
+        newRow.append('td').text(report.durationMinutes);
+        var comment = report['comments']
+        newRow.append('td').html(comment).text();
     })
 };
 

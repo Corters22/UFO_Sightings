@@ -1,28 +1,16 @@
-console.log(data[0].datetime)
+var tableData = data
 
-var country_list = [];
-
-function findDate(userList) {
-    for (var i = 0; i < userList.length; i++) {
-        if (userList[i].datetime === '1/1/2010') {
-            country_list.push(userList[i].country);
-        }
-    }
-    return country_list;
-}
-
-console.log(findDate(data));
-
-inputDate = '1/1/2010'
-
-// filter function
-
-funtion findDate2(userList) {
-    return userList.datetime === inputDate;
-};
-
-var table = data.filter(findDate2);
-
-console.log(table)
+// Use D3 to select the table
+var table1 = d3.select("#ufo-table");
+// Use D3 to select the table body
+var tbody = d3.select("tbody");
 
 
+data.forEach((report) => {
+    var row = tbody.append("tr");
+    Object.entries(report).forEach(([key, value]) => {
+      var cell = row.append("td");
+      cell.text(value);
+    });
+  });
+  

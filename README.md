@@ -24,3 +24,36 @@ So we wrote a code that will create a table dynamically based upon the dataset p
         durationMinutes: "5 mins.",
         comments: "4 bright green circles high in the sky going in circles then one bright green light at my front door."
 
+## UFO Level 1: Automatic Table and Date Search
+
+- Used the [index.html](https://github.com/Corters22/javascript-challenge/blob/main/UFO-level-1/index.html) file provided.
+- Using the UFO dataset provided in the form of an array of JavaScript objects, I wrote code [app.js](https://github.com/Corters22/javascript-challenge/blob/main/UFO-level-1/static/js/app.js) that appends a table to the web page and then adds new rows of data for each UFO sighting.
+- There is a column for date/time, city, state, country, shape, and comment.
+- Used a date form in your HTML document and wrote JavaScript code that will listen for events and search through the date/time column to find rows that match user input.
+
+## UFO Level 2: Multiple Search Categories
+
+- Included all criteria from Level 1
+- Added multiple input tags and/or select dropdowns, wrote JavaScript code [app.js](https://github.com/Corters22/javascript-challenge/blob/main/UFO-level-2/static/js/app.js) so the user can set multiple filters and search for UFO sightings using the following criteria based on the table columns:
+
+        1. date/time
+        2. city
+        3. state
+        4. country
+        5. shape
+
+## Screenshots of web page
+
+### Level 1
+
+No filter added
+![no filter](https://github.com/Corters22/javascript-challenge/blob/main/UFO-level-1/static/images/screenshot-no_filter.PNG)
+
+With Filter
+![filtered](https://github.com/Corters22/javascript-challenge/blob/main/UFO-level-1/static/images/screenshot-with_filter.PNG)
+
+### Level 2
+
+No filter added
+
+![no filter](https://github.com/Corters22/javascript-challenge/blob/main/UFO-level-2/static/images/screenshot-no_filter.PNG)

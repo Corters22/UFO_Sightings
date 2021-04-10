@@ -60,11 +60,14 @@ function runEnter() {
       filteredByDate = tableData.filter(report => report.datetime === dateValue);
     }
 
-    if (cityValue === '') {
-      return filteredByDate;
+    if (cityValue === '' && dateValue === '') {
+      return tableData;
+    }
+    else if (dateValue === '' && cityValue != '') {
+      return filteredByCity = tableData.filter(report => report.city === cityValue);
     }
     else {
-      
+      return filteredByCityAndDate = filteredByDate.filter(report => report.city === cityValue);
     }
     
       

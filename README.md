@@ -12,6 +12,7 @@ So we wrote a code that will create a table dynamically based upon the dataset p
 
 ## Data
 
+<img align="right" width="200" height="200" src="https://github.com/Corters22/javascript-challenge/blob/main/UFO-level-1/static/images/alien.jfif">
 - Found here [data.js](https://github.com/Corters22/javascript-challenge/blob/main/UFO-level-1/static/js/data.js)
 - Contains list of JavaScript Objects
 - Example of one object:
@@ -57,3 +58,14 @@ With Filter
 No filter added
 
 ![no filter](https://github.com/Corters22/javascript-challenge/blob/main/UFO-level-2/static/images/screenshot-no_filter.PNG)
+
+With Filter
+
+![filtered](https://github.com/Corters22/javascript-challenge/blob/main/UFO-level-2/static/images/screenshot-with_filter.PNG)
+
+## Finished sites
+### Level 1
+[UFO finder](https://corters22.github.io/javascript-challenge/UFO-level-1/index.html)
+
+### Level 2
+[Bonus UFO finder](https://corters22.github.io/javascript-challenge/UFO-level-2/index.html)

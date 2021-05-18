@@ -13,8 +13,11 @@ So we wrote a code that will create a table dynamically based upon the dataset p
 ## Data
 
 <img align="right" width="200" height="200" src="UFO-level-1/static/images/alien.jfif">
+
 - Found here [data.js](UFO-level-1/static/js/data.js)
+
 - Contains list of JavaScript Objects
+
 - Example of one object:
         
         datetime: "1/1/2010",
